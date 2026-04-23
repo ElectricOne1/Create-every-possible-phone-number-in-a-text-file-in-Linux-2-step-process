@@ -1,0 +1,1 @@
+sed 's/^/555/' '/root/Desktop/all_7_digit.txt'    > '/root/Desktop/555areaCodeNumbers.txt'
