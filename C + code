@@ -1,0 +1,16 @@
+#include <iostream>
+    #include <fstream>
+    #include <string>
+    #include <iomanip>
+    using namespace std;
+    int main()
+    {
+      ofstream out;
+      out.open ("all_7_digit.txt");
+      for(int i = 999999; i < 9999999; i++)
+       out << setw(9) << i << endl;
+      out.close();
+    }
+// This creates the base 7 digit phone number.  in linux, to add the area code (you choose your own, by changing the 555 below) 
+// which will be different every time, we run this file though SED like this :
+// sed 's/^/555/' '/root/Desktop/all_7_digit.txt'    > '/root/Desktop/555areaCodeNumbers.txt'
